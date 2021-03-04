@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&display=swap');
+
+:root{
+  --primary-blue: rgb(0, 0, 255);
+  --primary-green: rgba(46, 248, 6, 0.979);
+  --primary-white: #fff;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+/*NAVBAR*/
+.logo{
+  width:5.25rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*MENU LINK*/
+nav a.nav-link{
+  font-weight: .05rem;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li{
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav li a{
+  margin-right: 0.75rem;
+  margin-left: .075rem;
+  color:var(--primary-blue) !important;
+  border-top: 0.18rem solid var(--primary-white);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  max-width: 5.25rem;
+  padding:1px !important;
+  height:4rem !important;
 }
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top: 0.18rem solid var(--primary-green);
+
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 0.18rem solid var(--primary-green);
+}
+
